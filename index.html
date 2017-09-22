@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Giphy API</title>
+	<!-- BootStrap import -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- CSS import -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<!-- HTML Body -->
+	<!-- make a container for layout -->
+	<div class = "container">
+		<!-- display the buttons in row -->
+		<div class = "row">
+			<div id = 'buttons'></div>
+		</div>
+
+		<!-- another row for displying results & submit form-->
+		<div class = "row">
+			<!-- display results -->
+			<div class = "col-lg-9">
+				<div class = "display"></div>
+			</div>
+
+			<!-- submit form -->
+			<div class = "col-lg-3">
+				<form id = "addForm">
+					<label for='newShowInput'>Add something</label>
+					<input type='text' id='newShowInput'>
+					<br>
+					<input id='addShow' type='submit' value='SUBMIT'>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery import -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- giphy.js, javascript file import -->
+ 	<script type="text/javascript" src="assets/javascript/giphy.js"></script>
+
+</body>
+</html>
