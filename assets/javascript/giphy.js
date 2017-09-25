@@ -42,16 +42,14 @@ function createButtons(){
 //animates and pause gif on hover
 $(".gif").on("click", function(){
 	var state = $(this).attr("data-attr");
-	
+	if(state === 'data-animated'){
+		$(this).attr('src', $(this).data('animated'));
+	}
+	else{
+		$(this).attr('src', $(this).data('paused'));
+	}
 });
-$(document).on("click", ".playOnHover", function(){
 
-	$(this).attr('src', $(this).data('animated'));
-});
-
-$(document).on("click", ".playonHover", function(){
-	$(this).attr('src', $(this).data('paused'));
-});
 
 //sets a button from input
 $('#addShow').on('click', function(){
